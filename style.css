@@ -1,0 +1,39 @@
+body .game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#player, #cpu {
+    height: 30vh;
+}
+
+#win {
+    text-align: center;
+}
+#win img {
+    height: 15vh;
+    margin-bottom: 20px;
+}
+.text {
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+#choice {
+    height: 15vh;
+    text-align: center;
+    display: none;
+}
+#choice *{
+    display: inline-block;
+    height: 10vw;
+    padding: 10px;
+    transition: .33s;
+}
+#choice *:hover {
+    background-color: green;
+}
