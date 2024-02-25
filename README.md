@@ -6,4 +6,4 @@ Then the computer also makes computer randomly chooses either rock, paper or sci
 A JS Script compare these two choices and returns whether the player wins, loses or draws. <br />
 <br />
 <br />
-**Simple project made with pure HTML, CSS and JavaScript**
+**Simple project made with pure HTML, CSS and JavaScript** 
