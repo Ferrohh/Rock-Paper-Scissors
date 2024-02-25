@@ -1,14 +1,21 @@
-body .game {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#game {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 80vh;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    transition: .20s;
+    text-align: center;
+    font-weight: bolder;
 }
 
 #player, #cpu {
     height: 30vh;
+    margin-bottom: 15px;
 }
 
 #win {
@@ -23,6 +30,7 @@ body .game {
     font-size: 1.5em;
 }
 
+
 #choice {
     height: 15vh;
     text-align: center;
@@ -30,10 +38,27 @@ body .game {
 }
 #choice *{
     display: inline-block;
-    height: 10vw;
+    height: 7vw;
     padding: 10px;
     transition: .33s;
+    border-radius: 20%;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
-#choice *:hover {
-    background-color: green;
+#choice img {
+    border: 5px solid black;
+}
+#choice span {
+    position:absolute;
+    width:8%;
+    display: none;
+    font-weight: bold;
+    transition: .33s;
+}
+#choice img:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+#rock:hover #rockDesc, #paper:hover #paperDesc, #scissors:hover #scissorsDesc {
+    display: block;
 }

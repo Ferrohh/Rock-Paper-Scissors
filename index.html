@@ -8,9 +8,10 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="game">
+    <div id="game">
         <div>
-            <img src="img/Paper.png" alt="Player" id="player">
+            <img src="img/Paper.png" alt="Player" id="player"><br>
+            PLAYER
         </div>
         <div id="win">
             <img src="img/Lose.png" alt="result" id="result">
@@ -18,14 +19,24 @@
             <div class="text" id="helpText">Press space to play</div>
         </div>
         <div>
-            <img src="img/Paper.png" alt="CPU" id="cpu">
+            <img src="img/Paper.png" alt="CPU" id="cpu"><br>
+            CPU
         </div>
     </div>
     
     <div id="choice">
-        <img src="img/Rock.png" alt="rock" onclick="rockPaperScissors(0)">
-        <img src="img/Paper.png" alt="paper" onclick="rockPaperScissors(1)">
-        <img src="img/Scissors.png" alt="scissor" onclick="rockPaperScissors(2)">
+        <div id="rock">
+            <img src="img/Rock.png" alt="rock" onclick="rockPaperScissors(0)"><br>
+            <span id="rockDesc">Rock</span>
+        </div>
+        <div id="paper">
+            <img src="img/Paper.png" alt="paper" onclick="rockPaperScissors(1)"><br>
+            <span id="paperDesc">Paper</span>
+        </div>
+        <div id="scissors">
+            <img src="img/Scissors.png" alt="scissor" onclick="rockPaperScissors(2)"><br>
+            <span id="scissorsDesc">Scissors</span>
+        </div>
     </div>
 </body>
 </html>
