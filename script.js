@@ -6,7 +6,7 @@ const enumRPS = [
 ]
 
 // messages for winning/losing
-const winStates = ["The player won!", "The CPU won!", "Nobody won!"]
+const winStates = ["The player won!", "The CPU won!", "It's a draw!"]
 
 // mapping of directories for winning/losing images
 const win = [
