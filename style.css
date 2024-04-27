@@ -1,8 +1,28 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#points {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+.player-points {
+    float: left;
+    padding-left: 20%;
+}
+.CPU-points {
+    float: right;
+    padding-right: 20%;
 }
 
 #game {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

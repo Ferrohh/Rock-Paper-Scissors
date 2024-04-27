@@ -29,10 +29,17 @@ const winText = document.getElementById("winner") // for text of who won
 const helpText = document.getElementById("helpText") // for writing to press space
 // buttons
 const choice = document.getElementById("choice")
+// points displays
+const playerPoints = document.getElementById("player-points")
+const CPUPoints = document.getElementById("CPU-points")
 
 
 // variables for player and CPU choices
 let playerChoice, CPUChoice;
+
+// variables for keeping track of points
+let playerScore = 0
+let CPUScore = 0
 
 
 // event for pressing space
@@ -101,12 +108,17 @@ function winner() {
     ) {
         winText.textContent = winStates[0]
         result.src = win[0].dir
+        playerScore++
 
     }
     else { // the CPU won
         winText.textContent = winStates[1]
         result.src = win[1].dir
+        CPUScore++
     }
+
+    playerPoints.textContent = playerScore
+    CPUPoints.textContent = CPUScore
 }
 
 
