@@ -1,5 +1,7 @@
 # Rock Paper Scissors in JavaScript
 
+https://ferrohh.github.io/Rock-Paper-Scissors/
+
 This is a simple game of Rock, Paper, and Scissors. <br />
 The player chooses one of the three options (rock, paper or scissors) by clicking a button. <br />
 Then the computer also makes computer randomly chooses either rock, paper or scissors. <br />
